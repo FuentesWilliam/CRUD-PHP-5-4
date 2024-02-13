@@ -8,9 +8,7 @@ class ManejadorBaseDatos {
     private $password = 'xxxxx';
     private $database = 'xxxxx';
 
-    /**
-     * Constructor de la clase que establece la conexión a la base de datos.
-     */
+
     public function __construct() {
         try {
             $this->conexion = new mysqli($this->host, $this->user, $this->password, $this->database);
